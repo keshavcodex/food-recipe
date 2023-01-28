@@ -6,6 +6,15 @@ function Recipes(props) {
   const { recipes } = props;
   return (
     <div>
+      <div className="row height: 5px">
+        {recipes.map((recipe) => (
+          <RecipeItem
+            label={recipe.recipe.label}
+            image={recipe.recipe.image}
+            ingredientLines={recipe.recipe.ingredientLines}
+          />
+        ))}
+      </div>
       <div className="early">
         <div className="animate-fading1 col-md-3">
           <div className="card py-2 text-center">
@@ -127,15 +136,6 @@ function Recipes(props) {
             </div>
           </div>
         </div>
-      </div>
-      <div className="row height: 5px late">
-        {recipes.map((recipe) => (
-          <RecipeItem
-            label={recipe.recipe.label}
-            image={recipe.recipe.image}
-            ingredientLines={recipe.recipe.ingredientLines}
-          />
-        ))}
       </div>
     </div>
   );

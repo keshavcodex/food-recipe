@@ -52,13 +52,14 @@
 
 
 .early {
-  animation: hideAnimation 0s ease-in 2.2s;
+  animation: hideAnimation 0s ease-in 3s;
   animation-fill-mode: forwards;
 }
 
 @keyframes hideAnimation {
   to {
     height: 0;
+    width: 0;
   }
   90%  {opacity: 0;}
   100% {opacity: 0;}
