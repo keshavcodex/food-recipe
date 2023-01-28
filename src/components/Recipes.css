@@ -1,0 +1,61 @@
+.card {
+  margin:10px 10px 10px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+/* .col-md-3{
+  display: contents;
+} */
+.animate-fading {
+  animation: fading 1.5s infinite;
+  display: inline-flex;
+}
+@keyframes fading {
+  0% {
+    opacity: 0.65;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.65;
+  }
+}
+.grey_box {
+  padding: 10rem 9rem;
+  background-color: rgb(224, 224, 224);
+}
+.grey_button {
+  padding: 1.1rem 3.3rem;
+  background-color: rgb(206, 204, 204);
+  border-radius: 3px;
+}
+
+
+.early {
+  animation: hideAnimation 0s ease-in 3.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: none;
+  }
+}
+  
+.late {
+  animation: appear 3.5s forwards;
+}
+@keyframes appear {
+  0%   {opacity: 0;}
+  90%  {opacity: 0;}
+  100% {opacity: 1;}
+}
+  

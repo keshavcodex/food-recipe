@@ -4,16 +4,15 @@ import "./App.css";
 import Header from "./components/Header";
 import Recipes from "./components/Recipes";
 
-
 function App() {
-  const [search, setSerach] = useState("chocolate");
+  const [search, setSerach] = useState("Mango");
   const [recipes, setRecipes] = useState([]);
 
   const APP_ID = process.env.REACT_APP_APP_ID;
   const APP_KEY = process.env.REACT_APP_APP_KEY;
-
+  
   useEffect(() => {
-    getRecipes();
+    getRecipes(); // eslint-disable-next-line
   }, []);
 
   const getRecipes = async () => {
@@ -37,9 +36,14 @@ function App() {
         onInputChange={onInputChange}
         onSearchClick={onSearchClick}
       />
-      <div className="container"><Recipes recipes={recipes} /></div>
+      <div className="container">
+        <Recipes recipes={recipes} />
+      </div>
     </div>
   );
 }
-
+export const sum = () => {
+  console.log("sum")
+}
 export default App;
+// export {getRecipes};
