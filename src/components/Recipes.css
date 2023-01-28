@@ -5,53 +5,67 @@
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
 }
 /* .col-md-3{
   display: contents;
 } */
-.animate-fading {
-  animation: fading 1.5s infinite;
+.animate-fading1 {
+  animation: fading1 1.5s infinite;
   display: inline-flex;
 }
-@keyframes fading {
+.animate-fading2 {
+  animation: fading2 1.5s infinite;
+  display: inline-flex;
+}
+@keyframes fading1 {
   0% {
-    opacity: 0.65;
+    opacity: 0.4;
   }
   50% {
     opacity: 1;
   }
   100% {
-    opacity: 0.65;
+    opacity: 0.4;
+  }
+}
+@keyframes fading2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .grey_box {
   padding: 10rem 9rem;
-  background-color: rgb(224, 224, 224);
+  background-color: rgb(255, 211, 211);
 }
 .grey_button {
   padding: 1.1rem 3.3rem;
-  background-color: rgb(206, 204, 204);
+  background-color: rgb(255, 211, 211);
   border-radius: 3px;
 }
 
 
 .early {
-  animation: hideAnimation 0s ease-in 3.3s;
+  animation: hideAnimation 0s ease-in 2.2s;
   animation-fill-mode: forwards;
 }
 
 @keyframes hideAnimation {
   to {
-    visibility: hidden;
-    width: 0;
     height: 0;
-    display: none;
   }
+  90%  {opacity: 0;}
+  100% {opacity: 0;}
 }
   
 .late {
-  animation: appear 3.5s forwards;
+  animation: appear 2.2s forwards;
 }
 @keyframes appear {
   0%   {opacity: 0;}

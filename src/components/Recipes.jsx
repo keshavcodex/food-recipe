@@ -7,7 +7,7 @@ function Recipes(props) {
   return (
     <div>
       <div className="early">
-        <div className="animate-fading col-md-3">
+        <div className="animate-fading1 col-md-3">
           <div className="card py-2 text-center">
             <div className="grey_box"></div>
             <div className="card-body">
@@ -22,7 +22,7 @@ function Recipes(props) {
             </div>
           </div>
         </div>
-        <div className="animate-fading col-md-3">
+        <div className="animate-fading2 col-md-3">
           <div className="card py-2 text-center">
             <div className="grey_box"></div>
             <div className="card-body">
@@ -37,7 +37,7 @@ function Recipes(props) {
             </div>
           </div>
         </div>
-        <div className="animate-fading col-md-3">
+        <div className="animate-fading1 col-md-3">
           <div className="card py-2 text-center">
             <div className="grey_box"></div>
             <div className="card-body">
@@ -52,7 +52,7 @@ function Recipes(props) {
             </div>
           </div>
         </div>
-        <div className="animate-fading col-md-3">
+        <div className="animate-fading2 col-md-3">
           <div className="card py-2 text-center">
             <div className="grey_box"></div>
             <div className="card-body">
@@ -67,7 +67,7 @@ function Recipes(props) {
             </div>
           </div>
         </div>
-        <div className="animate-fading col-md-3">
+        <div className="animate-fading2 col-md-3">
           <div className="card py-2 text-center">
             <div className="grey_box"></div>
             <div className="card-body">
@@ -82,7 +82,7 @@ function Recipes(props) {
             </div>
           </div>
         </div>
-        <div className="animate-fading col-md-3">
+        <div className="animate-fading1 col-md-3">
           <div className="card py-2 text-center">
             <div className="grey_box"></div>
             <div className="card-body">
@@ -97,7 +97,7 @@ function Recipes(props) {
             </div>
           </div>
         </div>
-        <div className="animate-fading col-md-3">
+        <div className="animate-fading2 col-md-3">
           <div className="card py-2 text-center">
             <div className="grey_box"></div>
             <div className="card-body">
@@ -112,7 +112,7 @@ function Recipes(props) {
             </div>
           </div>
         </div>
-        <div className="animate-fading col-md-3">
+        <div className="animate-fading1 col-md-3">
           <div className="card py-2 text-center">
             <div className="grey_box"></div>
             <div className="card-body">

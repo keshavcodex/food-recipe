@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Recipes from "./components/Recipes";
 
 function App() {
-  const [search, setSerach] = useState("Mango");
+  const [search, setSerach] = useState("burger");
   const [recipes, setRecipes] = useState([]);
 
   const APP_ID = process.env.REACT_APP_APP_ID;
